@@ -25,13 +25,13 @@ int main(){
 			}
 		}
 		else{
-			if (row % 2 == 0){
-				start = (row - 1) * (row - 1) + 1;
-				end = start + col - 1;
+			if (col % 2 == 0){
+				start = (col - 1) * (col - 1) + 1;
+				end = start + row - 1;
 			}
 			else {
-				start = row * row;
-				end = start - col + 1;
+				start = col * col;
+				end = start - row + 1;
 			}
 		}
 		cout << end << endl;
